@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: 0.1s;
 }
 
 .main {
@@ -18,10 +19,11 @@
   padding: 10px;
   border-radius: 10px;
   display: inline-block;
+  width: 765px;
 }
 
 .keyboard-row {
-  display: block;
+  display: flex;
 }
 
 .keyboard-button {
@@ -36,20 +38,37 @@
   height: 45px;
   padding: 7px;
 }
+.keyboard-button:hover {
+  background-color: rgba(42, 47, 37, 0.4784313725);
+}
+.keyboard-button:active {
+  box-shadow: inset 3px 3px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.keyboard-button.active {
+  background-color: rgba(42, 47, 37, 0.4784313725);
+  box-shadow: inset 3px 3px 5px 3px rgba(0, 0, 0, 0.5);
+}
 
 .keyboard-button-special {
   background-color: #26191E;
   width: auto;
 }
+.keyboard-button-special:hover {
+  background-color: #573d46;
+}
 
-.button-backspace,
-.button-capslock,
-.button-enter,
-.button-shift {
+.Backspace,
+.CapsLock,
+.Enter,
+.ShiftLeft,
+.ShiftRight {
   width: 96px;
 }
 
-.button-space {
+.Space {
   background-color: #2A2F25;
   width: 351px;
+}
+.Space:hover {
+  background-color: rgba(42, 47, 37, 0.4784313725);
 }/*# sourceMappingURL=style.css.map */
